@@ -2,18 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can you Guess the number?</title>
     <link rel="stylesheet" href="main.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
   <body>
-    <input type="text" name="userInput" value="">
-    <p><button type="button" name="button" onClick="myGuess()">Enter</button></p>
+     <div class="container ">
+         <div class="resultComment column is-half is-offset-one-quarter">
 
-    <div class="resultComment">
-        m
-        <!-- Sorry That's not correct. The answer is <span name="correctNumber"> </span> -->
-        <!-- Yay! Way to go! -->
-    </div>
+             <!-- Sorry That's not correct. The answer is <span name="correctNumber"> </span> -->
+             <!-- Yay! Way to go! -->
+         </div>
+         <!-- <div class="is-vcentered"> -->
+         <div class="field column is-half is-offset-one-quarter">
+             <div class="control has-icons-left has-icons-right">
+                 <input class="input is-danger is-success" type="number" placeholder="My guess" name="userInput">
+                 <span class="icon is-small is-left">
+                     <i class="fas fa-hashtag"></i>
+                 </span>
+                 <span class="icon icon-change is-small is-right">
+                     <!-- <i class="fas fa-check"></i>
+                    // <i class="fas fa-exclamation-triangle"></i> -->
+                 </span>
+             </div>
+             <!-- <p class="help is-success">This username is available</p> -->
+         </div>
+         <p class="help error-m is-danger column is-half is-offset-one-quarter"></p>
+
+       <p><a class="button is-primary is-rounded is-large column is-one-fifth is-offset-two-fifths" onClick="myGuess()">Enter</a></p>
+
+
+     </div>
+    <!-- <div class="columns">
+        <div class="column is-one-third">is-one-third</div>
+        <div class="column">Auto</div>
+        <div class="column">Auto</div>
+    </div> -->
+
+
+    <!-- </div> -->
 
 
     <script src="scripts.js" charset="utf-8"></script>
